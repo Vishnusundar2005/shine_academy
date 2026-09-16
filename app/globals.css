@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    --background: oklch(99% 0.005 180);
+    --foreground: oklch(20% 0.04 200);
+    --card: oklch(97% 0.012 180);
+    --card-foreground: oklch(20% 0.04 200);
+    --popover: oklch(99% 0.005 180);
+    --popover-foreground: oklch(20% 0.04 200);
+    --primary: oklch(55% 0.11 195);
+    --primary-foreground: oklch(99% 0.005 180);
+    --secondary: oklch(95% 0.02 190);
+    --secondary-foreground: oklch(20% 0.04 200);
+    --muted: oklch(94% 0.015 190);
+    --muted-foreground: oklch(40% 0.03 200);
+    --accent: oklch(82% 0.14 85);
+    --accent-foreground: oklch(20% 0.04 200);
+    --destructive: oklch(55% 0.2 27);
+    --destructive-foreground: oklch(99% 0.005 180);
+    --border: oklch(90% 0.015 190);
+    --input: oklch(90% 0.015 190);
+    --ring: oklch(55% 0.11 195);
+    --ink: oklch(20% 0.04 200);
+    --ink-soft: oklch(40% 0.03 200);
+    --parchment: oklch(99% 0.005 180);
+    --parchment-2: oklch(96% 0.012 190);
+    --teal: oklch(55% 0.11 195);
+    --teal-deep: oklch(38% 0.09 200);
+    --teal-soft: oklch(92% 0.04 190);
+    --gold: oklch(82% 0.14 85);
+    --gold-deep: oklch(70% 0.15 75);
+  }
+
+  * {
+    border-color: var(--border);
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
