@@ -12,6 +12,7 @@ export const academyConfig = {
   professorTitle: "PhD Professor",
   boards: ["CBSE", "State Board", "ICSE"] as const,
   classes: ["Class 11", "Class 12"] as const,
+  reviewAdminKeyword: "shine2026", // Secret owner keyword to manage/remove reviews
 };
 
 export const createWhatsAppUrl = (params: {
